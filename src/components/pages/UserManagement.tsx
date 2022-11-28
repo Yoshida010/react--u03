@@ -3,10 +3,10 @@
 import { FC, memo } from "react";
 import { HeaderLayout } from "../templates/HeaderLayout";
 
-export const Home: FC = memo(() => {
+export const UserManagement: FC = memo(() => {
 	return (
 		<HeaderLayout>
-			<p>Homeページです</p>
+			<p>ユーザー管理ページです</p>
 		</HeaderLayout>
 	);
 });
