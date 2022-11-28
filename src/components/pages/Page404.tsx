@@ -1,7 +1,12 @@
 /** @format */
 
 import { FC, memo } from "react";
+import { HeaderLayout } from "../templates/HeaderLayout";
 
 export const Page404: FC = memo(() => {
-	return <p>404ページです</p>;
+	return (
+		<HeaderLayout>
+			<p>404ページです</p>
+		</HeaderLayout>
+	);
 });
