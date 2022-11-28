@@ -1,12 +1,13 @@
 /** @format */
+import { ChakraProvider } from "@chakra-ui/react";
 
-import { Button } from "@chakra-ui/react";
+import theme from "./theme/theme";
+import { Router } from "./router/Router";
 
 export const App = () => {
 	return (
-		<>
-			<Button colorScheme="teal">ボタン</Button>
-			<p>テキスト</p>
-		</>
+		<ChakraProvider theme={theme}>
+			<Router />
+		</ChakraProvider>
 	);
 };
